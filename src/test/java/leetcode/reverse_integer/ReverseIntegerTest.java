@@ -1,10 +1,8 @@
-package leetcode;
+package leetcode.reverse_integer;
 
 import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
-
-import leetcode.reverse_integer.Solution;
 
 /**
  * Reverse digits of an integer.
