@@ -1,10 +1,8 @@
-package leetcode;
+package leetcode.two_sum;
 
 import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
-
-import leetcode.two_sum.Solution;
 
 /**
  * Given an array of integers, return indices of the two numbers such that they add up to a specific target.
