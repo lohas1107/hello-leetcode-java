@@ -12,6 +12,8 @@ plugins {
 
     // Apply the application plugin to add support for building an application
     application
+
+    jacoco
 }
 
 repositories {
@@ -26,6 +28,18 @@ dependencies {
 
     // Use JUnit test framework
     testImplementation("junit:junit:4.12")
+}
+
+jacoco {
+    toolVersion = "0.8.2"
+    reportsDir = file("$buildDir/reports/jacoco")
+}
+
+tasks.jacocoTestReport {
+    reports {
+        xml.isEnabled = true
+        html.isEnabled = false
+    }
 }
 
 application {
